@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "question": "### Kubectl Logs\nWhat is the kubectl log command that will show all previous logs for a pod?",
+    "answer": "```bash\nkubectl logs -f <pod_name>\n```\n\nThe `-f` flag follows the log output in real-time, similar to `tail -f`.",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "2",
+    "question": "### Docker Build\nWhat command builds a Docker image with a specific tag from the current directory?",
+    "answer": "```bash\ndocker build -t <image_name>:<tag> .\n```\n\nThe `.` at the end specifies the current directory as the build context.",
+    "category": "Docker"
+  },
+  {
+    "id": "3",
+    "question": "### Git Rebase\nWhat is the difference between `git merge` and `git rebase`?",
+    "answer": "**Git Merge:**\n- Creates a merge commit\n- Preserves commit history\n- Non-destructive operation\n\n**Git Rebase:**\n- Rewrites commit history\n- Creates a linear history\n- Can cause conflicts if used on shared branches",
+    "category": "Git"
+  },
+  {
+    "id": "4",
+    "question": "### React Hooks\nWhat is the correct way to update state that depends on the previous state value?",
+    "answer": "```javascript\nconst [count, setCount] = useState(0);\n\n// Correct way - using functional update\nsetCount(prevCount => prevCount + 1);\n\n// Avoid this in most cases\nsetCount(count + 1);\n```\n\nFunctional updates ensure you're working with the most current state value.",
+    "category": "React"
+  },
+  {
+    "id": "5",
+    "question": "### CSS Flexbox\nHow do you center an item both horizontally and vertically using Flexbox?",
+    "answer": "```css\n.container {\n  display: flex;\n  justify-content: center; /* horizontal */\n  align-items: center;     /* vertical */\n  min-height: 100vh;       /* full viewport height */\n}\n```\n\nAlternatively, you can use:\n```css\n.container {\n  display: flex;\n  place-items: center;\n}\n```",
+    "category": "CSS"
+  },
+  {
+    "id": "6",
+    "question": "### JavaScript Promises\nWhat is the difference between `Promise.all()` and `Promise.allSettled()`?",
+    "answer": "**Promise.all():**\n- Fails fast - rejects immediately if any promise rejects\n- Returns array of resolved values\n- Best for when all promises must succeed\n\n**Promise.allSettled():**\n- Waits for all promises to complete\n- Returns array of objects with status and value/reason\n- Best for when you want results regardless of failures",
+    "category": "JavaScript"
+  }
+]
