@@ -3,7 +3,7 @@
     "id": "1",
     "question": "### Kubectl Logs\nWhat is the kubectl log command that will show all previous logs for a pod?",
     "answer": "```bash\nkubectl logs -f <pod_name>\n```\n\nThe `-f` flag follows the log output in real-time, similar to `tail -f`.",
-    "category": "Kubernetes"
+    "category": "Cloud"
   },
   {
     "id": "2",
